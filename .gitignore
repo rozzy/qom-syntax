@@ -1,0 +1,6 @@
+gemicons/
+
+*.css
+*.sass
+!qom.css
+!qom.sass
