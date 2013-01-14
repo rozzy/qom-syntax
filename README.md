@@ -6,7 +6,7 @@ Qom theme for [Rainbow](http://craig.is/making/rainbows) syntax highlighter.
 I am using it in my projects. Such as [Qom](https://github.com/rozzy/Qom), for example.
 
 # Install
-To use Rainbow, you shoul download .zip-archive from [repository](https://github.com/ccampbell/rainbow) and upload it on your server.
+To use Rainbow, you should use files from my repository or download .zip-archive from [Rainbow's repository](https://github.com/ccampbell/rainbow) and upload it on your server.
 Then you should insert following scripts after `</body>` tag:
 ```html
   <script src="js/jquery.min.js"></script>
