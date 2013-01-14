@@ -24,7 +24,7 @@ pre
   .support
     color: #0086B3
   .tag, .tag-name
-    color: navy
+    color: green
   .keyword, .css-property, .vendor-prefix, .sass, .class, .id, .css-value, .entity.function, .storage.function
     font-weight: 700
   .css-property, .css-value, .vendor-prefix, .support.namespace
@@ -46,7 +46,10 @@ pre
     color: #009926
   .preprocessor
     color: #66747B
-
+  .operator
+    color: grey
+    font-weight: bold
+    
 .rainbow
   display: inline-block!important
   border: none
@@ -66,6 +69,7 @@ pre
     .rainbow-line-number
       text-align: right
       border: none
+      color: lighten(black, 80%)
       vertical-align: top
       background-color: #FFF
       padding-left: .4em
@@ -81,3 +85,4 @@ pre
       background-color: #f4f4f4
       .rainbow-line-number
         background-color: #f4f4f4
+        color: black
