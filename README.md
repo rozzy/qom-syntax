@@ -1,7 +1,9 @@
-qom-theme-for-syntax
+qom-syntax
 ====================
 
 Qom theme for [Rainbow](http://craig.is/making/rainbows) syntax highlighter.
+
+I am using it in my projects. Such as [Qom](https://github.com/rozzy/Qom), for example.
 
 # Install
 To use Rainbow, you shoul download .zip-archive from [repository](https://github.com/ccampbell/rainbow) and upload it on your server.
