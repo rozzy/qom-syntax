@@ -1,0 +1,81 @@
+/*
+  Qom theme for Rainbow syntax highlighter
+  
+  Author: Nikitin Nikita
+ */
+
+pre
+  background: #fff
+  word-wrap: break-word
+  color: #000
+  font-size: 14px
+  margin: 0
+  padding: 0
+  font-family: Monaco, courier, monospace
+
+code
+  font-family: Monaco, courier, monospace
+
+pre
+  .comment
+    color: #998
+  .support
+    color: #0086B3
+  .tag, .tag-name
+    color: navy
+  .keyword, .css-property, .vendor-prefix, .sass, .class, .id, .css-value, .entity.function, .storage.function
+    font-weight: 700
+  .css-property, .css-value, .vendor-prefix, .support.namespace
+    color: #333
+  .constant.numeric, .keyword.unit, .hex-color
+    font-weight: 400
+    color: #099
+  .entity
+    &.class
+      color: #458
+    &.id, &.function
+      color: #900
+  .attribute, .variable
+    color: teal
+  .string, .support.value
+    font-weight: 400
+    color: #d14
+  .regexp
+    color: #009926
+  .preprocessor
+    color: #66747B
+
+.rainbow
+  display: inline-block!important
+  border: none
+  max-width: 100%
+  border-spacing: 0
+  font-size: .9em
+  margin: 0
+  padding: 0
+  .rainbow-header
+    border: none
+    background-color: #FFF
+    .rainbow-language
+      text-align: right
+      border: none
+      padding: .5em
+  .rainbow-line
+    .rainbow-line-number
+      text-align: right
+      border: none
+      vertical-align: top
+      background-color: #FFF
+      padding-left: .4em
+      padding-right: .4em
+      &::before
+        content: attr(data-number)
+        border: none
+    .rainbow-line-code
+      padding-left: 1em
+      word-wrap: break-word
+      border: none
+    &:hover
+      background-color: #f4f4f4
+      .rainbow-line-number
+        background-color: #f4f4f4
