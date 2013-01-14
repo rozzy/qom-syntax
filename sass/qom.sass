@@ -1,10 +1,16 @@
-// Qom theme for Rainbow syntax highlighter
-// Rainbow: http://craig.is/making/rainbows/
-// Rainbow on github: https://github.com/ccampbell/rainbow
-//
-// Author: Nikitin Nikita
-// Repo url: https://github.com/rozzy/qom-theme-for-syntax
-// Date: 14 Jan 2013
+/* Qom theme for Rainbow syntax highlighter
+ * Rainbow: http://craig.is/making/rainbows/
+ * Rainbow on github: https://github.com/ccampbell/rainbow
+ *
+ * Author: Nikitin Nikita
+ * Repo url: https://github.com/rozzy/qom-theme-for-syntax
+ * Date: 14 Jan 2013 */
+
+@mixin flexible-font
+  @media screen and (max-width: 600px)
+    font-size: 12px
+  @media screen and (max-width: 300px)
+    font-size: 10px
 
 pre
   background: #fff

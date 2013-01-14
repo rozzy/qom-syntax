@@ -1,63 +1,170 @@
-/*
-Syntax error: Undefined mixin 'flexible-font'.
-        on line 67 of qom.sass, in `flexible-font'
-        from line 67 of qom.sass
+/* Qom theme for Rainbow syntax highlighter
+ * Rainbow: http://craig.is/making/rainbows/
+ * Rainbow on github: https://github.com/ccampbell/rainbow
+ *
+ * Author: Nikitin Nikita
+ * Repo url: https://github.com/rozzy/qom-theme-for-syntax
+ * Date: 14 Jan 2013 */
 
-62:   width: 100%
-63:   border-spacing: 0
-64:   font-size: .9em
-65:   margin: 0
-66:   padding: 0
-67:   +flexible-font
-68:     
-69:   .rainbow-header
-70:     border: none
-71:     background-color: #FFF
-72:     .rainbow-language
+ pre {
+    background: #fff;
+    word-wrap: break-word;
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Monaco,courier,monospace;
+}
 
-Backtrace:
-qom.sass:67:in `flexible-font'
-qom.sass:67
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:299:in `block in watch'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flexible-font'.\A         on line 67 of qom.sass, in `flexible-font'\A         from line 67 of qom.sass\A \A 62:   width: 100%\A 63:   border-spacing: 0\A 64:   font-size: .9em\A 65:   margin: 0\A 66:   padding: 0\A 67:   +flexible-font\A 68:     \A 69:   .rainbow-header\A 70:     border: none\A 71:     background-color: #FFF\A 72:     .rainbow-language"; }
+code {
+    font-family: Monaco,courier,monospace;
+}
+
+pre .comment {
+    color: #998;
+}
+
+pre .support {
+    color: #0086b3;
+}
+
+pre .tag,pre .tag-name {
+    color: green;
+}
+
+pre .keyword,pre .css-property,pre .vendor-prefix,pre .sass,pre .class,pre .id,pre .css-value,pre .entity.function,pre .storage.function {
+    font-weight: 700;
+}
+
+pre .css-property,pre .css-value,pre .vendor-prefix,pre .support.namespace {
+    color: #333;
+}
+
+pre .constant.numeric,pre .keyword.unit,pre .hex-color {
+    font-weight: 400;
+    color: #099;
+}
+
+pre .entity.class {
+    color: #458;
+}
+
+pre .entity.id {
+    color: #900;
+}
+
+pre .entity.function {
+    color: green;
+}
+
+pre .attribute,pre .variable {
+    color: teal;
+}
+
+pre .string,pre .support.value {
+    font-weight: 400;
+    color: #d14;
+}
+
+pre .regexp {
+    color: #009926;
+}
+
+pre .preprocessor {
+    color: #66747b;
+}
+
+pre .operator {
+    color: grey;
+    font-weight: bold;
+}
+
+pre .function,pre .call {
+    color: green;
+}
+
+.rainbow {
+    display: inline-block !important;
+    border: none;
+    width: 100%;
+    border-spacing: 0;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .rainbow {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .rainbow {
+        font-size: 10px;
+    }
+}
+
+.rainbow .rainbow-header {
+    border: none;
+    background-color: #fff;
+}
+
+.rainbow .rainbow-header .rainbow-language {
+    text-align: right;
+    border: none;
+    padding: 0.5em;
+}
+
+.rainbow .rainbow-line .rainbow-line-number {
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    border: none;
+    color: #ccc;
+    vertical-align: top;
+    background-color: #fff;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+@media screen and (max-width: 600px) {
+    .rainbow .rainbow-line .rainbow-line-number {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .rainbow .rainbow-line .rainbow-line-number {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rainbow .rainbow-line .rainbow-line-number {
+        display: none;
+    }
+}
+
+.rainbow .rainbow-line .rainbow-line-number::before {
+    content: attr(data-number);
+    border: none;
+}
+
+.rainbow .rainbow-line .rainbow-line-code {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1em;
+    word-wrap: break-word !important;
+    border: none;
+}
+
+.rainbow .rainbow-line:hover {
+    background-color: #f4f4f4;
+}
+
+.rainbow .rainbow-line:hover .rainbow-line-number {
+    background-color: #f4f4f4;
+    color: #000;
+}
