@@ -20,7 +20,6 @@ if (window.Rainbow) window.Rainbow.linecount = (function(Rainbow) {
 
             $lines.append($row);
         });
-
         $block.replaceWith($lines);
     });
 })(window.Rainbow);

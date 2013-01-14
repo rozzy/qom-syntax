@@ -4,3 +4,4 @@ gemicons/
 *.sass
 !qom.css
 !qom.sass
+!rainbow.linecount.js
