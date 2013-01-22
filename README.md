@@ -22,6 +22,7 @@ And also insert it into your `<head>`:
 
 # Example
 There is a little example of using Rainbow with my theme:
+![](http://db.tt/xzQDvUxj)
 ```html 
 <!DOCTYPE html>
 <html>
