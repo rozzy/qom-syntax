@@ -158,6 +158,7 @@ pre .function,pre .call {
     padding-left: 1em;
     word-wrap: break-word !important;
     border: none;
+    white-space: pre;
 }
 
 .rainbow .rainbow-line:hover {
